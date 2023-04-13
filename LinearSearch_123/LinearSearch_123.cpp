@@ -37,4 +37,13 @@ void LinearSearch()
 	int ctr;			// number of comparisons
 
 
+	do
+	{
+		//accept the number to be searched 
+		cout << "\nEnter the element you want to seacrh: ";			//langkah no 1 algoritma
+		int item;
+		cin >> item;
+
+		ctr = 0;
+	}
 }

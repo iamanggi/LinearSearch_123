@@ -10,7 +10,7 @@ void input()
 {
 	while (true) 
 	{
-		cout << "enter the number of element in the array: ";
+		cout << "Enter the number of element in the array: ";
 		cin >> n;
 		if ((n > 0) && (n <= 20))
 			break;
@@ -19,7 +19,7 @@ void input()
 	}
 
 	// Accept array elements
-	cout << "\n--------------------\n";
+	cout << "\n----------------------\n";
 	cout << " Enter Array Elements \n";
 	cout << "----------------------\n";
 	for (i = 0; i < n; i++)
@@ -40,7 +40,7 @@ void LinearSearch()
 	do
 	{
 		//accept the number to be searched 
-		cout << "\nEnter the element you want to seacrh: ";			//langkah no 1 algoritma
+		cout << "\nEnter the element you want to search: ";			//langkah no 1 algoritma
 		int item;
 		cin >> item;
 
@@ -50,14 +50,14 @@ void LinearSearch()
 			ctr++;
 			if (arr[i] == item)										// langkah no 5 algoritma 
 			{
-				cout << "\n" << item << "found at position" << (i + 1) << endl;
+				cout << "\n" << item << " : found at position " << (i + 1) << endl;
 				break;
 			}
 
 		}
 		if (i == n)													// langkah no 5 algoritma
 
-			cout << "\n" << item << "not found in the array\n";
+			cout << "\n" << item << " : not found in the array\n";
 		cout << "\nNumber of comparasions: " << ctr << endl;
 
 		cout << "\nContinue search (y/n): ";
